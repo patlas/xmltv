@@ -5,11 +5,9 @@
  */
 package agh;
 
-import agh.utils.DownloadPreview;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.concurrent.Future;
-import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import org.apache.log4j.Logger;
 
@@ -63,15 +61,18 @@ public class MyGUI extends javax.swing.JFrame {
         bPreview = new javax.swing.JButton();
         bExit = new javax.swing.JButton();
         tChannel = new javax.swing.JTabbedPane();
-        pTransponder = new javax.swing.JPanel();
+        pToday = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tToday = new javax.swing.JTree();
+        pTommorow = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tTable = new javax.swing.JTable();
-        pChannels = new javax.swing.JPanel();
+        tTommorow = new javax.swing.JTree();
+        pNextDay = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        cTable = new javax.swing.JTable();
+        tNextDay = new javax.swing.JTree();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Java - Maksymilian Świder");
+        setTitle("[JAVA] Artur Kozik");
 
         bDownload.setText("Download");
         bDownload.addActionListener(new java.awt.event.ActionListener() {
@@ -96,57 +97,50 @@ public class MyGUI extends javax.swing.JFrame {
             }
         });
 
-        tTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(tTable);
+        jScrollPane3.setViewportView(tToday);
 
-        javax.swing.GroupLayout pTransponderLayout = new javax.swing.GroupLayout(pTransponder);
-        pTransponder.setLayout(pTransponderLayout);
-        pTransponderLayout.setHorizontalGroup(
-            pTransponderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
+        javax.swing.GroupLayout pTodayLayout = new javax.swing.GroupLayout(pToday);
+        pToday.setLayout(pTodayLayout);
+        pTodayLayout.setHorizontalGroup(
+            pTodayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 697, Short.MAX_VALUE)
         );
-        pTransponderLayout.setVerticalGroup(
-            pTransponderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+        pTodayLayout.setVerticalGroup(
+            pTodayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
         );
 
-        tChannel.addTab("Transponders", pTransponder);
+        tChannel.addTab("Today", pToday);
 
-        cTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane2.setViewportView(cTable);
+        jScrollPane1.setViewportView(tTommorow);
 
-        javax.swing.GroupLayout pChannelsLayout = new javax.swing.GroupLayout(pChannels);
-        pChannels.setLayout(pChannelsLayout);
-        pChannelsLayout.setHorizontalGroup(
-            pChannelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
+        javax.swing.GroupLayout pTommorowLayout = new javax.swing.GroupLayout(pTommorow);
+        pTommorow.setLayout(pTommorowLayout);
+        pTommorowLayout.setHorizontalGroup(
+            pTommorowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 697, Short.MAX_VALUE)
         );
-        pChannelsLayout.setVerticalGroup(
-            pChannelsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+        pTommorowLayout.setVerticalGroup(
+            pTommorowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
         );
 
-        tChannel.addTab("Channels", pChannels);
+        tChannel.addTab("Tommorow", pTommorow);
+
+        jScrollPane2.setViewportView(tNextDay);
+
+        javax.swing.GroupLayout pNextDayLayout = new javax.swing.GroupLayout(pNextDay);
+        pNextDay.setLayout(pNextDayLayout);
+        pNextDayLayout.setHorizontalGroup(
+            pNextDayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 697, Short.MAX_VALUE)
+        );
+        pNextDayLayout.setVerticalGroup(
+            pNextDayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+        );
+
+        tChannel.addTab("Next day", pNextDay);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -198,8 +192,7 @@ public class MyGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_bDownloadActionPerformed
 
     private void bPreviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bPreviewActionPerformed
-        DownloadPreview dp  = new DownloadPreview(tTable, cTable);
-        dp.viewData(parseDownload.transponderArray, parseDownload.channelArray);
+
         
     }//GEN-LAST:event_bPreviewActionPerformed
 
@@ -213,12 +206,15 @@ public class MyGUI extends javax.swing.JFrame {
     public javax.swing.JButton bDownload;
     private javax.swing.JButton bExit;
     public static javax.swing.JButton bPreview;
-    public javax.swing.JTable cTable;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JPanel pChannels;
-    private javax.swing.JPanel pTransponder;
+    private javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JPanel pNextDay;
+    private javax.swing.JPanel pToday;
+    private javax.swing.JPanel pTommorow;
     private javax.swing.JTabbedPane tChannel;
-    public javax.swing.JTable tTable;
+    private javax.swing.JTree tNextDay;
+    private javax.swing.JTree tToday;
+    private javax.swing.JTree tTommorow;
     // End of variables declaration//GEN-END:variables
 }

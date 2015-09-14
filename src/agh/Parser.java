@@ -137,7 +137,7 @@ public class Parser {
             try{
                 obj = readJsonFromUrl(url);
             }catch(IOException io){
-                logger.fatal("Can not parse JSON url file!");
+                logger.fatal("Cannot parse JSON url file!");
                 return null;
             }
 
@@ -178,6 +178,28 @@ public class Parser {
             return lista;
         }
         
+        
+    public String getDescription(String id)
+    {
+        id = id.replaceAll("\\s", ""); // remove whitespaces
+        String desc = "Description unavailable";
+        
+        String url = "http://ncplus.pl/program-tv?rm=ajax&id="+id;
+        
+        JSONArray obj = null;
+        try{
+            obj = readJsonFromUrl(url);
+        }catch(IOException io){
+            logger.fatal("Cannot parse JSON url file!");
+            logger.error("Cannot obtain programm description");
+            return null;
+        }
+        
+        desc = obj.get(0).toString();
+            
+
+        return desc;
+    }    
         
         
     public  JSONArray readJsonFromUrl(String url) throws IOException, JSONException 

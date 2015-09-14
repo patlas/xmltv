@@ -89,6 +89,8 @@ public class ParserTest {
       
       Parser par = new Parser();
       
+      System.out.println(par.getDescription("20587916"));
+      
         ArrayList<Struct> lista = par.parseJSON("http://ncplus.pl/~/epgjson/2015-09-13.ejson");
         
         int a = 0;
@@ -101,6 +103,7 @@ public class ParserTest {
             }
             if(a++ == 2) break;
         }
+        
         
         //Vector<String[3]>
         
