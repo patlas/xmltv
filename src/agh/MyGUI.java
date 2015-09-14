@@ -5,9 +5,11 @@
  */
 package agh;
 
+import agh.utils.MyObservable;
+import agh.utils.MyObserver;
+import agh.utils.Struct;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
-import java.util.concurrent.Future;
 import javax.swing.UnsupportedLookAndFeelException;
 import org.apache.log4j.Logger;
 
@@ -17,13 +19,24 @@ import org.apache.log4j.Logger;
  */
 public class MyGUI extends javax.swing.JFrame {
 
-    private ArrayList<Downloader> listDownloaderPool = new ArrayList<Downloader>();
     private DownloaderPool downloaderPool = null;
-    private DownloaderWithParseDB parseDownload = null;
+    private ArrayList<Struct> todayList = null;
+    private ArrayList<Struct> tommorowList = null;
+    private ArrayList<Struct> nextList = null;
+    private ArrayList<Downloader> downloaderPoolList = new ArrayList<>();
+    
+    public MyObserver downloadObserver = null;
+    public static MyObservable downloadObservable = null;
 
     final static Logger logger = Logger.getLogger(MyGUI.class);
     public MyGUI() {
         initComponents();
+        
+        downloadObserver = new MyObserver();
+        downloadObservable = new MyObservable();
+        downloadObserver.observe(downloadObservable);
+        
+        
         bPreview.setEnabled(false);
         
          try {
@@ -176,19 +189,21 @@ public class MyGUI extends javax.swing.JFrame {
 
     private void bDownloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bDownloadActionPerformed
         
-        parseDownload = new DownloaderWithParseDB(Preferences.prefList.get(0));
         
-        listDownloaderPool.add(parseDownload);
+        downloaderPoolList.add(new Downloader("today",""));
+        downloaderPoolList.add(new Downloader("tommorow",""));
+        downloaderPoolList.add(new Downloader("next",""));
   
+        
         downloaderPool = new DownloaderPool();		
         try {
-                ArrayList<Future<?>> tasks = downloaderPool.addAll(listDownloaderPool);
+                downloaderPool.startDownloads(downloaderPoolList);
         } catch (MalformedURLException e1) {
                 logger.error("Natrafiono na konflikt podczas próby pobierania plików.");
                 e1.printStackTrace();
         }
         
-        listDownloaderPool.clear();
+        //downloaderPoolList.clear();
     }//GEN-LAST:event_bDownloadActionPerformed
 
     private void bPreviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bPreviewActionPerformed

@@ -91,7 +91,7 @@ public class ParserTest {
       
       System.out.println(par.getDescription("20587916"));
       
-        ArrayList<Struct> lista = par.parseJSON("http://ncplus.pl/~/epgjson/2015-09-13.ejson");
+        ArrayList<Struct> lista = par.parseJSONProgramm("http://ncplus.pl/~/epgjson/2015-09-13.ejson");
         
         int a = 0;
         for(Struct s : lista){

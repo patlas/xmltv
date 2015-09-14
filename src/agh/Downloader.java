@@ -1,66 +1,29 @@
 package agh;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 
+import agh.utils.Struct;
+import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 
 
 public class Downloader implements Runnable {
 
-	public int numtry = 1;
-	public Boolean isDownloaded = false;
 	public static long TIMEOUT=0;
-	public static String usrAgent = "brak";
 	
-	private URL url;
-	private File file;	
-	private String fName;
-	private String dir= "web_pages/";
-	private int timeout = 1000;
-	
-	
-	
+        public String dayString = null;
+        public  String id = "";
+        private boolean descORchannel = false;
+        
+        public ArrayList<Struct> programs = null;
+        public String description = null;
+        
+        public String channelURL = "http://ncplus.pl/~/epgjson/";//2015-09-13.ejson
+    
 	final static Logger logger = Logger.getLogger(Downloader.class);
-	
-	public static void setTimeout(long time)
-	{
-		TIMEOUT = time;
-		logger.info("Zmienna timeout została ustawiona na:"+TIMEOUT );
-	}
-	
-	
-	private static String MD5string(String str) //tworzenie nazw plik�w je�eli takowych nie podano
-	{
-		MessageDigest md5;
-		String ret = null;
-		try {
-			md5 = MessageDigest.getInstance("MD5");
-			md5.update(StandardCharsets.UTF_8.encode(str));
-			ret = String.format("%032x", new BigInteger(1, md5.digest()));
-		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();//DODA� LOGGER!!!
-		}
 
-		return String.valueOf(Math.abs(str.hashCode()));//ret;
-	}
-	
-	
-
+        @Override
 	public void run()
 	{
 	try {
@@ -71,139 +34,35 @@ public class Downloader implements Runnable {
 	    }
 	}
 	
-	public void doRun(/*Charset charSet*/)
+	public void doRun()
 	{
-	    InputStream is = null;
-	    BufferedReader br;
-	    BufferedWriter bw = null;
-	    String line;
-	 	logger.info("Ruszył wątek: " + url.toString()); 
+            Parser parser = new Parser();
+            
+            
+            if(descORchannel == false)
+            {
+               programs = parser.parseJSONProgramm(channelURL+Parser.getDate(dayString)+".ejson");
+               MyGUI.downloadObservable.increment();
+               logger.info("Ruszył wątek pobierający liste kanałów i programów"); 
+            }
+            else
+            {
+                description = parser.getDescription(id);
+              
+                logger.info("Ruszył wątek pobierający opis programu");  
+            }
 
-	    Thread.currentThread().setName(fName);
-	    System.setProperty("http.agent", ""); 
-	    
-	    if(!file.exists())
-		{
-			try{
-				file.createNewFile();
-			}
-			catch(IOException ioe){
-		         logger.warn("Napotkano problem podczas trzowania pliku: "+file.toString());
-		    	 ioe.printStackTrace();
-			}
-		}
+            
 
-	    try {  	
-	    	HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
-	    	httpConn.setRequestProperty("User-agent", usrAgent);
-	    	httpConn.setConnectTimeout(timeout);
-	    	is = httpConn.getInputStream();
-	    	
-	    	
-	        br = new BufferedReader(new InputStreamReader(is/*,charSet*/));
-	        bw = new BufferedWriter(new FileWriter(file,false));
-	        //PrintWriter writer = new PrintWriter( new FileOutputStream(file, false) );
-	        while ((line = br.readLine()) != null) {
-	            //System.out.println(line);
-	        	bw.write(line);
-	        	bw.newLine();
-	        }
-	    } catch (MalformedURLException mue) {
-	    	logger.error("Podano błędny adres strony www");
-	         mue.printStackTrace();
-	    } catch (IOException ioe) {
-	    	logger.error("Wykryto błąd podczas próby zapisu/odczytu do pliku: " +fName);
-	         ioe.printStackTrace();
-	    } finally {
-	        try {
-	            if (is != null) is.close();
-	            if (bw != null) bw.close();
-	            logger.info("Strona została pobrana i zapisana do pliku: " +fName);
-	        } catch (IOException ioe) {
-	            // nothing to see here
-	        }
-	    }
-	    isDownloaded = true;
-
-	}
+	    Thread.currentThread().setName(dayString);
+	    logger.debug("Teraz działam ja: "+dayString);
+        }
 	
-	public String getStringUrl()
+	public Downloader(String day, String ID) //today, tommorow, next
 	{
-		return url.toString();
-	}
-	
-	
-	public File getFile()
-	{
-		return file;
-	}
-	
-	public Downloader(String urlString)
-	{
-		fName = "f_"+Downloader.MD5string(urlString)+".html";
-		file = new File(dir+fName);
-		try {
-			url = new URL(urlString);
-		} catch (MalformedURLException e) {
-			logger.fatal("Podany adres nie spełnia wymogów standardu.");
-			e.printStackTrace();
-		}				
-	}
-	
-	public Downloader(URL Url)
-	{
-		fName = "f_"+Downloader.MD5string(Url.toString())+".html";
-		file = new File(dir+fName);
-		url = Url;
-		isDownloaded = true;
-	}
-	
-	public Downloader(String urlString, String fileName)
-	{
-		if(fileName.contains("/") == true)
-		{
-			dir = "";	
-			fName = fileName;
-		}
-		else
-		{
-			if(fileName.contains(".html")==true)
-				fName = fileName;
-			else
-				fName = fileName+".html";
-		}
-		
-		file = new File(dir+fName);
-		
-		try {
-			url = new URL(urlString);
-		} catch (MalformedURLException e) {
-			logger.fatal("Podany adres nie spełnia wymogów standardu.");
-			e.printStackTrace();
-		}	
-		isDownloaded = true;
-			
-	}
-
-	
-	public Downloader(Preference pref)
-	{
-		String urlString = pref.getAddr();
-		TIMEOUT = Preference.TIMEOUT;
-		numtry = pref.getNumTry();
-		timeout = pref.getTimeout();
-		
-		fName = "f_"+Downloader.MD5string(urlString)+".html";
-		file = new File(dir+fName);
-		try {
-			url = new URL(urlString);
-		} catch (MalformedURLException e) {
-			logger.fatal("Podany adres nie spełnia wymogłw standardu.");
-			e.printStackTrace();
-		}	
-		
-		usrAgent = Preference.getAgent();
-		isDownloaded = true;
+            dayString = day;
+            id = ID;
+            if(id.length() == 0) descORchannel = false;
 	}
 	
 	
