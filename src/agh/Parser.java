@@ -1,14 +1,24 @@
 package agh;
 
+import agh.utils.Struct;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Vector;
 
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -28,6 +38,10 @@ public class Parser {
 		}
 
 	}
+        
+        public Parser(){
+            
+        }
 	
 	public Parser(File f)
 	{
@@ -115,5 +129,82 @@ public class Parser {
             return retData;
         }
 
+        public ArrayList<Struct> parseJSON(String url){
+            
+        
+            ArrayList<Struct> lista = new ArrayList<>();
+            JSONArray obj = null;
+            try{
+                obj = readJsonFromUrl(url);
+            }catch(IOException io){
+                logger.fatal("Can not parse JSON url file!");
+                return null;
+            }
+
+            for(int kindex = 0; kindex<obj.length(); kindex++)
+            {
+                JSONArray kanaly = new JSONArray(obj.get(kindex).toString());
+                String nazwaK = kanaly.get(1).toString();
+                JSONArray programy = new JSONArray(kanaly.get(2).toString());
+
+                //System.out.println(nazwaK);
+
+                Struct kan = new Struct();
+
+                kan.kanal = nazwaK;
+
+                for(int pindex = 0; pindex<programy.length(); pindex++)
+                {
+                    JSONArray program = new JSONArray(programy.get(pindex).toString());
+
+                    Vector<String> prog = new Vector<>();
+
+                    prog.add(program.get(0).toString());
+                    prog.add(program.get(1).toString());
+                    prog.add(program.get(2).toString());
+
+                    kan.program.add(prog);
+
+    //                String program_id = program.get(0).toString();
+    //                String program_title = program.get(1).toString(); 
+    //                String program_start = program.get(2).toString(); 
+
+    //                System.out.println(program_id + program_title+program_start);
+                }
+    //            System.out.println();
+
+                lista.add(kan);
+            }
+            return lista;
+        }
+        
+        
+        
+    public  JSONArray readJsonFromUrl(String url) throws IOException, JSONException 
+    {
+        InputStream is = new URL(url).openStream();
+        try {
+          BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+          String jsonText = readAll(rd);
+          JSONArray json = new JSONArray(jsonText);
+          return json;
+        } finally {
+          is.close();
+        }
+    }
+    
+    
+    private  String readAll(Reader rd) throws IOException 
+    {
+        StringBuilder sb = new StringBuilder();
+        int cp;
+        while ((cp = rd.read()) != -1) {
+          sb.append((char) cp);
+        }
+        return sb.toString();
+    }
+        
+        
+        
 
 }

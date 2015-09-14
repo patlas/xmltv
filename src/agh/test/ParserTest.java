@@ -5,10 +5,10 @@
  */
 package agh.test;
 
+import agh.Parser;
 import agh.utils.Struct;
 import java.util.ArrayList;
 import java.util.Vector;
-import org.json.JSONArray;
 
 /**
  *
@@ -45,47 +45,53 @@ public class ParserTest {
         
         
         
-        JSONArray obj = new JSONArray(obj2);
-        ArrayList<Struct> lista = new ArrayList<>(); 
+       // JSONArray obj = new JSONArray(obj2);
       
-        for(int kindex = 0; kindex<obj.length(); kindex++)
-        {
-            JSONArray kanaly = new JSONArray(obj.get(kindex).toString());
-            String nazwaK = kanaly.get(1).toString();
-            JSONArray programy = new JSONArray(kanaly.get(2).toString());
-            
-            //System.out.println(nazwaK);
-            
-            Struct kan = new Struct();
-            
-            kan.kanal = nazwaK;
-            
-            for(int pindex = 0; pindex<programy.length(); pindex++)
-            {
-                JSONArray program = new JSONArray(programy.get(pindex).toString());
-
-                Vector<String> prog = new Vector<>();
-                
-                prog.add(program.get(0).toString());
-                prog.add(program.get(1).toString());
-                prog.add(program.get(2).toString());
-                
-                kan.program.add(prog);
-                
-//                String program_id = program.get(0).toString();
-//                String program_title = program.get(1).toString(); 
-//                String program_start = program.get(2).toString(); 
-            
-//                System.out.println(program_id + program_title+program_start);
-            }
-//            System.out.println();
-            
-            lista.add(kan);
-        }
+//      JSONArray obj = readJsonFromUrl("http://ncplus.pl/~/epgjson/2015-09-13.ejson");
+//      
+//      ArrayList<Struct> lista = new ArrayList<>(); 
+//      
+//        for(int kindex = 0; kindex<obj.length(); kindex++)
+//        {
+//            JSONArray kanaly = new JSONArray(obj.get(kindex).toString());
+//            String nazwaK = kanaly.get(1).toString();
+//            JSONArray programy = new JSONArray(kanaly.get(2).toString());
+//            
+//            //System.out.println(nazwaK);
+//            
+//            Struct kan = new Struct();
+//            
+//            kan.kanal = nazwaK;
+//            
+//            for(int pindex = 0; pindex<programy.length(); pindex++)
+//            {
+//                JSONArray program = new JSONArray(programy.get(pindex).toString());
+//
+//                Vector<String> prog = new Vector<>();
+//                
+//                prog.add(program.get(0).toString());
+//                prog.add(program.get(1).toString());
+//                prog.add(program.get(2).toString());
+//                
+//                kan.program.add(prog);
+//                
+////                String program_id = program.get(0).toString();
+////                String program_title = program.get(1).toString(); 
+////                String program_start = program.get(2).toString(); 
+//            
+////                System.out.println(program_id + program_title+program_start);
+//            }
+////            System.out.println();
+//            
+//            lista.add(kan);
+//        }
+//        
+      
+      Parser par = new Parser();
+      
+        ArrayList<Struct> lista = par.parseJSON("http://ncplus.pl/~/epgjson/2015-09-13.ejson");
         
-        
-        
-        
+        int a = 0;
         for(Struct s : lista){
             
             System.out.println(s.kanal);
@@ -93,16 +99,19 @@ public class ParserTest {
             for(Vector<String> p : s.program){
                 System.out.println(p.elementAt(1));
             }
-            
+            if(a++ == 2) break;
         }
         
         //Vector<String[3]>
         
-      
+    //  http://ncplus.pl/~/epgjson/2015-09-13.ejson
       
         
         
     }
+    
+    
+    
     
     
     
