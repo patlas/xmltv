@@ -1994,3 +1994,74 @@
 2015-09-15 15:45:15 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
 2015-09-15 15:45:15 DEBUG Downloader:58 - Teraz działam ja: tommorow
 2015-09-15 15:45:17 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 20:59:38 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 20:59:38 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 20:59:41 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 20:59:42 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 20:59:42 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 20:59:42 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 20:59:42 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 20:59:42 DEBUG MyObserver:37 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 20:59:42 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 20:59:42 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 20:59:42 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 20:59:42 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 20:59:42 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 20:59:42 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 20:59:42 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 20:59:42 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 20:59:55 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 21:02:07 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 21:02:08 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 21:02:09 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 21:02:10 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:02:10 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 21:02:11 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:02:11 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 21:02:11 DEBUG MyObserver:37 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 21:02:11 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:02:11 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:02:11 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:02:11 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:02:11 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:02:11 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:02:11 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:02:11 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 21:03:22 INFO  MyGUI:231 - Aplikacja została zamkniêta.
+2015-09-15 21:05:38 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 21:05:38 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 21:05:39 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 21:05:40 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:05:40 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 21:05:41 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:05:41 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 21:05:41 DEBUG MyObserver:37 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 21:05:41 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:05:41 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:05:41 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:05:41 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:05:41 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:05:41 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:05:41 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:05:41 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 21:06:50 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 21:06:50 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 21:06:52 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 21:06:53 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:06:53 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 21:06:53 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:06:53 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 21:06:53 DEBUG MyObserver:37 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 21:06:53 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:06:53 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:06:53 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:06:53 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:06:53 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:06:53 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:06:53 DEBUG FileAppender:79 - Adding TV channels to XMLTV file
+2015-09-15 21:06:53 INFO  FileAppender:91 - Lista kanałów została pomyślnie dodana do pliku
+2015-09-15 21:06:53 DEBUG FileAppender:98 - Adding TV programms to XMLTV file
+2015-09-15 21:06:53 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 21:06:53 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 21:07:28 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 21:07:37 INFO  MyGUI:231 - Aplikacja została zamkniêta.

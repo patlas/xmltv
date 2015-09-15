@@ -21,6 +21,8 @@ public class MyObserver implements Observer {
     
   final static Logger logger = Logger.getLogger(MyObserver.class);
   
+  String[] fileNames = {"todayProgramm.dtd", "tommorowProgramm.dtd", "nextDayProgramm.dtd"};
+  
   public void observe(Observable o) {
     o.addObserver(this);
   }
@@ -38,12 +40,24 @@ public class MyObserver implements Observer {
         {
             if(dw.dayString.equalsIgnoreCase("today")){
                 MyGUI.todayList = dw.programs;
+                FileAppender fa = new FileAppender(fileNames[0]);
+                fa.appendChannels(dw.programs);
+                fa.appendProgramms(dw.programs);
+                fa.writer.close();
             }
-            else if(dw.dayString.equalsIgnoreCase("tomorrow")){
+            else if(dw.dayString.equalsIgnoreCase("tommorow")){
                 MyGUI.tommorowList = dw.programs;
+                FileAppender fa = new FileAppender(fileNames[1]);
+                fa.appendChannels(dw.programs);
+                fa.appendProgramms(dw.programs);
+                fa.writer.close();
             }
             else if(dw.dayString.equalsIgnoreCase("next")){
                 MyGUI.nextList = dw.programs;
+                FileAppender fa = new FileAppender(fileNames[2]);
+                fa.appendChannels(dw.programs);
+                fa.appendProgramms(dw.programs);
+                fa.writer.close();
             }
         }
         

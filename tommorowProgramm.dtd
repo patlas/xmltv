@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv source-info-url="http://ncplus.pl/~/epgjson/*.ejson/" source-info-name="NCplus TV channel list">
+	<channel id="1">
+		<display-name>TVP 1 HD</dislpay-name>
+	</channel>
+	<channel id="2">
+		<display-name>TVP 2 HD</dislpay-name>
+	</channel>
+	<channel id="3">
+		<display-name>TVN</dislpay-name>
+	</channel>
+	<channel id="4">
+		<display-name>TVN Siedem HD</dislpay-name>
+	</channel>
+	<channel id="5">
+		<display-name>TVP HD</dislpay-name>
+	</channel>
+	<programme start="1442359200" channel="20606282">
+		<title lang="pl">Gruby i chudszy II: Rodzina Klumpów</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442365800" channel="20606283">
+		<title lang="pl">Historia dla ciebie - pamięć.pl</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442367000" channel="20606284">
+		<title lang="pl">Amerykański korespondent</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442370900" channel="20606285">
+		<title lang="pl">Świat się kręci</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442373600" channel="20606286">
+		<title lang="pl">Przerwa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442374200" channel="20606287">
+		<title lang="pl">Klan</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442375700" channel="20606288">
+		<title lang="pl">Telezakupy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442377800" channel="20606289">
+		<title lang="pl">Najdziwniejsze zwierzęta świata</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442381400" channel="20606290">
+		<title lang="pl">Jaka to melodia?</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442383200" channel="20606291">
+		<title lang="pl">Wiadomości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442384100" channel="20606292">
+		<title lang="pl">Pogoda poranna</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442384400" channel="20606293">
+		<title lang="pl">Polityka przy kawie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442385600" channel="20606294">
+		<title lang="pl">Expo dla Ciebie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442386500" channel="20606295">
+		<title lang="pl">Ranczo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442390400" channel="20606296">
+		<title lang="pl">Tysiąc i jedna noc</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442393700" channel="20606297">
+		<title lang="pl">Wspaniałe stulecie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442397600" channel="20606298">
+		<title lang="pl">Wiadomości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442398200" channel="20606299">
+		<title lang="pl">Agrobiznes</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442399100" channel="20606300">
+		<title lang="pl">Magazyn rolniczy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442400000" channel="20606301">
+		<title lang="pl">Przepis dnia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442400600" channel="20606302">
+		<title lang="pl">Najdziwniejsze zwierzęta świata</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442404800" channel="20606303">
+		<title lang="pl">Tysiąc i jedna noc</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442408400" channel="20606304">
+		<title lang="pl">Wiadomości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442409000" channel="20606305">
+		<title lang="pl">Pogoda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442409600" channel="20606306">
+		<title lang="pl">Okrasa łamie przepisy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442411400" channel="20606307">
+		<title lang="pl">Wspaniałe stulecie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442415600" channel="20606308">
+		<title lang="pl">Teleexpress</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442416500" channel="20606309">
+		<title lang="pl">Pogoda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442417100" channel="20606310">
+		<title lang="pl">Jaka to melodia?</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442418900" channel="20606311">
+		<title lang="pl">Klan</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442421000" channel="20606312">
+		<title lang="pl">Świat się kręci</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442423700" channel="20606313">
+		<title lang="pl">Przepis dnia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442424600" channel="20606314">
+		<title lang="pl">Wiadomości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442426400" channel="20606315">
+		<title lang="pl">Sport</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442427000" channel="20606316">
+		<title lang="pl">Pogoda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442427900" channel="20606317">
+		<title lang="pl">Kryptonim Szef</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442431500" channel="20606318">
+		<title lang="pl">Naród Putina. Dokąd zmierzają Rosjanie?</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442435700" channel="20606319">
+		<title lang="pl">Sekta III</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442354400" channel="20606353">
+		<title lang="pl">Krew z krwi</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442357700" channel="20606354">
+		<title lang="pl">Instynkt</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442361000" channel="20606355">
+		<title lang="pl">Magazyn Ekspresu Reporterów</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442364900" channel="20606356">
+		<title lang="pl">Życie na dopalaczach</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442368800" channel="20606357">
+		<title lang="pl">Paradoks</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442371500" channel="20606358">
+		<title lang="pl">Przerwa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442374800" channel="20606359">
+		<title lang="pl">M jak miłość</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442379900" channel="20606361">
+		<title lang="pl">M jak miłość</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442383200" channel="20606362">
+		<title lang="pl">Pytanie na śniadanie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442393700" channel="20606363">
+		<title lang="pl">Barwy szczęścia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442396100" channel="20606364">
+		<title lang="pl">Na dobre i na złe</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442399700" channel="20606365">
+		<title lang="pl">Imperium miłości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442403000" channel="20606366">
+		<title lang="pl">Wojciech Cejrowski - boso przez świat</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442405100" channel="20606367">
+		<title lang="pl">Moje 600 gramów szczęścia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442407800" channel="20606368">
+		<title lang="pl">Imperium miłości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442411400" channel="20606369">
+		<title lang="pl">Panorama - kraj</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442412600" channel="20606370">
+		<title lang="pl">Pogoda - kraj</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442413200" channel="20606371">
+		<title lang="pl">M jak miłość</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442416500" channel="20606372">
+		<title lang="pl">Moje 600 gramów szczęścia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442419200" channel="20606373">
+		<title lang="pl">Panorama</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442421000" channel="20606374">
+		<title lang="pl">Sport-telegram</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442421600" channel="20606375">
+		<title lang="pl">Pogoda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442422200" channel="20606376">
+		<title lang="pl">Jeden z dziesięciu</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442424300" channel="20606377">
+		<title lang="pl">Barwy szczęścia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442426700" channel="20606378">
+		<title lang="pl">Barwy szczęścia</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442429100" channel="20606379">
+		<title lang="pl">Na dobre i na złe</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442432700" channel="20606380">
+		<title lang="pl">Na sygnale</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442435100" channel="20606381">
+		<title lang="pl">Oświadczyny po irlandzku</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442378100" channel="20614993">
+		<title lang="pl">Porozmawiajmy o terroryzmie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442354700" channel="20611492">
+		<title lang="pl">Na językach</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442358300" channel="20611493">
+		<title lang="pl">Gra pozorów</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442361900" channel="20611494">
+		<title lang="pl">Uwaga!</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442363400" channel="20611495">
+		<title lang="pl">Sekrety magii</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442368200" channel="20611496">
+		<title lang="pl">Rozmowy w toku</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442371800" channel="20611497">
+		<title lang="pl">Przerwa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442375400" channel="20611498">
+		<title lang="pl">Uwaga!</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442377200" channel="20611499">
+		<title lang="pl">Mango - Telezakupy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442381100" channel="20611500">
+		<title lang="pl">Wesołowska i mediatorzy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442383200" channel="20611501">
+		<title lang="pl">Dzień Dobry TVN</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442393700" channel="20611502">
+		<title lang="pl">Kuchenne rewolucje</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442397600" channel="20611503">
+		<title lang="pl">Szkoła</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442401200" channel="20611504">
+		<title lang="pl">Szpital</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442404800" channel="20611505">
+		<title lang="pl">Ukryta prawda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442408400" channel="20611506">
+		<title lang="pl">Szkoła</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442412000" channel="20611507">
+		<title lang="pl">Rozmowy w toku</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442415600" channel="20611508">
+		<title lang="pl">Ukryta prawda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442419200" channel="20611509">
+		<title lang="pl">Szpital</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442422800" channel="20611510">
+		<title lang="pl">Fakty</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442424900" channel="20611511">
+		<title lang="pl">Sport</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442425500" channel="20611512">
+		<title lang="pl">Pogoda</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442425800" channel="20611513">
+		<title lang="pl">Uwaga!</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442427000" channel="20611514">
+		<title lang="pl">Na Wspólnej</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442429400" channel="20611516">
+		<title lang="pl">Kto poślubi mojego syna?</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442433000" channel="20611517">
+		<title lang="pl">Żony Hollywood</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442436600" channel="20611518">
+		<title lang="pl">Milczenie owiec</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442358000" channel="20606061">
+		<title lang="pl">Rush</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442361600" channel="20606062">
+		<title lang="pl">Sekrety magii</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442369700" channel="20606063">
+		<title lang="pl">Druga strona medalu</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442371500" channel="20606064">
+		<title lang="pl">Druga strona medalu</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442373300" channel="20606065">
+		<title lang="pl">Przerwa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442373900" channel="20606066">
+		<title lang="pl">We dwoje</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442379000" channel="20606067">
+		<title lang="pl">Męski typ</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442381100" channel="20606068">
+		<title lang="pl">Dr House</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442384700" channel="20606069">
+		<title lang="pl">Sąd rodzinny</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442388300" channel="20606070">
+		<title lang="pl">Sędzia Anna Maria Wesołowska</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442391900" channel="20606071">
+		<title lang="pl">Chirurdzy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442395500" channel="20606072">
+		<title lang="pl">Mango - Telezakupy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442401200" channel="20606073">
+		<title lang="pl">Sąd rodzinny</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442404800" channel="20606074">
+		<title lang="pl">Szpital</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442408400" channel="20606075">
+		<title lang="pl">Sędzia Anna Maria Wesołowska</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442412000" channel="20606076">
+		<title lang="pl">Revolution</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442415600" channel="20606077">
+		<title lang="pl">Prawo Agaty</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442419200" channel="20606078">
+		<title lang="pl">Chirurdzy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442422800" channel="20606079">
+		<title lang="pl">Dr House</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442426400" channel="20606080">
+		<title lang="pl">Lot</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442436900" channel="20606081">
+		<title lang="pl">Magazyn UEFA Champions League</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442440800" channel="20606082">
+		<title lang="pl">Geronimo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442354400" channel="20606643">
+		<title lang="pl">Straszny sen Dzidziusia Górkiewicza</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442361300" channel="20606644">
+		<title lang="pl">Laskowik & Malicki - Niedziela wieczór</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442364600" channel="20606645">
+		<title lang="pl">Strefa 3D - Podróże w trójwymiarze</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442365200" channel="20606646">
+		<title lang="pl">Przerwa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442379600" channel="20606647">
+		<title lang="pl">Ja to mam szczęście!</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442381400" channel="20606648">
+		<title lang="pl">Ja to mam szczęście!</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442383200" channel="20606649">
+		<title lang="pl">Rodzinka.pl</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442385000" channel="20606650">
+		<title lang="pl">Rodzinka.pl</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442387100" channel="20606651">
+		<title lang="pl">Ojciec Mateusz</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442390400" channel="20606652">
+		<title lang="pl">Ranczo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442394000" channel="20606653">
+		<title lang="pl">Łowca - ostatnie starcie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442400900" channel="20606654">
+		<title lang="pl">Okrasa łamie przepisy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442402700" channel="20606655">
+		<title lang="pl">Okrasa łamie przepisy</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442404800" channel="20606656">
+		<title lang="pl">Dziewczyny ze Lwowa</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442408100" channel="20606657">
+		<title lang="pl">Ranczo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442411700" channel="20606658">
+		<title lang="pl">Ranczo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442415300" channel="20606659">
+		<title lang="pl">Wojciech Cejrowski - boso przez świat</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442417400" channel="20606660">
+		<title lang="pl">Makłowicz w podróży</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442419500" channel="20606661">
+		<title lang="pl">Ojciec Mateusz</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442422800" channel="20606662">
+		<title lang="pl">Ranczo</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442426100" channel="20606663">
+		<title lang="pl">Rodzinka.pl</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442428200" channel="20606664">
+		<title lang="pl">Rodzinka.pl</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442430000" channel="20606665">
+		<title lang="pl">Aminata - siła miłości</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442433600" channel="20606666">
+		<title lang="pl">Ojciec Mateusz</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442437200" channel="20606667">
+		<title lang="pl">Stawka większa niż życie</title>
+		<subtitles type="teletekst"/>
+	</channel>
+	<programme start="1442399700" channel="20616722">
+		<title lang="pl">50. KFPP Opole 2013</title>
+		<subtitles type="teletekst"/>
+	</channel>
+</tv>
