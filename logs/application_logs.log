@@ -1849,3 +1849,148 @@
 2015-09-15 00:11:52 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
 2015-09-15 00:11:52 DEBUG Downloader:58 - Teraz działam ja: tommorow
 2015-09-15 00:15:10 INFO  MyGUI:215 - Aplikacja została zamkniêta.
+2015-09-15 14:06:13 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:06:13 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:08:39 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:08:40 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:09:09 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:09:09 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:09:21 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:09:21 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:09:54 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:09:55 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:11:30 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:11:30 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:12:36 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:12:36 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:12:51 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:12:51 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:26:52 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:26:52 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:27:19 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:27:19 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:27:20 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 14:27:21 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:27:21 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 14:27:21 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:27:21 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 14:29:20 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:29:20 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 14:29:49 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:29:49 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:29:50 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 14:29:51 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:29:51 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 14:29:51 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:29:51 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 14:29:51 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 14:29:51 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 14:34:44 INFO  MyGUI:223 - Aplikacja została zamkniêta.
+2015-09-15 14:45:10 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:45:10 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:48:07 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:48:07 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:52:49 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:52:49 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:53:54 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:53:54 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:54:58 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:54:58 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:55:46 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:55:46 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:56:20 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:56:20 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:56:31 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:56:31 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:57:13 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 14:57:13 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 14:57:37 INFO  MyGUI:224 - Aplikacja została zamkniêta.
+2015-09-15 15:30:40 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:30:40 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:30:43 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:30:43 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:30:43 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:30:44 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:30:44 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:30:44 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:30:44 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:30:44 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:30:44 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:33:15 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:33:15 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:33:17 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:33:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:33:18 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:33:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:33:18 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:33:18 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:33:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:33:18 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:33:21 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:34:00 INFO  MyGUI:224 - Aplikacja została zamkniêta.
+2015-09-15 15:34:35 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:34:35 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:34:37 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:34:37 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:34:37 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:34:38 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:34:38 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:34:38 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:34:38 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:34:38 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:34:41 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:37:18 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:37:18 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:37:22 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:37:22 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:37:22 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:37:23 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:37:23 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:37:23 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:37:23 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:37:23 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:37:27 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:42:14 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:42:14 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:42:17 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:42:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:42:18 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:42:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:42:18 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:42:18 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:42:18 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:42:18 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:42:21 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:43:38 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:43:38 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:43:40 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:43:40 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:43:40 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:43:41 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:43:41 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:43:41 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:43:41 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:43:41 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:43:44 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:44:36 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:44:36 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:44:37 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:44:38 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:44:38 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:44:38 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:44:38 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:44:38 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:44:38 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:44:38 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:44:41 DEBUG ViewUpdater:34 - Adding TV programm to tree
+2015-09-15 15:45:12 INFO  Preferences:134 - Wczytywanie preferencji zakończono sukcesem.
+2015-09-15 15:45:12 INFO  MainApp:20 - Interfejs GUI został uruchomiony.
+2015-09-15 15:45:14 INFO  DownloaderPool:39 - Rozpoczęto procedurę wielowątkowego pobierania.
+2015-09-15 15:45:14 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:45:14 DEBUG Downloader:58 - Teraz działam ja: today
+2015-09-15 15:45:15 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:45:15 DEBUG Downloader:58 - Teraz działam ja: next
+2015-09-15 15:45:15 DEBUG MyObserver:35 - Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem
+2015-09-15 15:45:15 INFO  Downloader:46 - Ruszył wątek pobierający liste kanałów i programów
+2015-09-15 15:45:15 DEBUG Downloader:58 - Teraz działam ja: tommorow
+2015-09-15 15:45:17 DEBUG ViewUpdater:34 - Adding TV programm to tree

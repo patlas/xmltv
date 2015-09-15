@@ -11,10 +11,16 @@ package agh.utils;
  */
 
 
+import agh.Downloader;
+import agh.MyGUI;
 import java.util.Observable;
 import java.util.Observer;
+import org.apache.log4j.Logger;
 
 public class MyObserver implements Observer {
+    
+  final static Logger logger = Logger.getLogger(MyObserver.class);
+  
   public void observe(Observable o) {
     o.addObserver(this);
   }
@@ -26,6 +32,23 @@ public class MyObserver implements Observer {
     if(someVariable == 3)
     {
         System.out.println("Pobrano wszystko");
+        logger.debug("Pobieranie listy kanałów na najbliższe 3 dni zakończono sukcesem");
+        
+        for(Downloader dw : MyGUI.downloaderPoolList)
+        {
+            if(dw.dayString.equalsIgnoreCase("today")){
+                MyGUI.todayList = dw.programs;
+            }
+            else if(dw.dayString.equalsIgnoreCase("tomorrow")){
+                MyGUI.tommorowList = dw.programs;
+            }
+            else if(dw.dayString.equalsIgnoreCase("next")){
+                MyGUI.nextList = dw.programs;
+            }
+        }
+        
+        MyGUI.bPreview.setEnabled(true);
+        
         
         //TODO tutaj updateować globalne zmienne z sparsowanymi kanałami
         // dodać konstruktor który przyjmie "wskaźniki" na listy tommorow itd (te na wyciągnięte informacje)

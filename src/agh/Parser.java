@@ -13,6 +13,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 import java.util.Vector;
 
 import org.apache.log4j.Logger;
@@ -161,6 +163,19 @@ public class Parser {
           sb.append((char) cp);
         }
         return sb.toString();
+    }
+    
+    
+    public static String convertTimestamp(String timestamp)
+    {
+        long unixSeconds = Long.parseLong(timestamp);//1372339860;
+        Date date = new Date(unixSeconds*1000L); // *1000 is to convert seconds to milliseconds
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm"); // the format of your date
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT+2")); // give a timezone reference for formating (see comment at the bottom
+        String formattedDate = sdf.format(date);
+        System.out.println(formattedDate);
+        
+        return formattedDate;
     }
         
         

@@ -8,9 +8,12 @@ package agh;
 import agh.utils.MyObservable;
 import agh.utils.MyObserver;
 import agh.utils.Struct;
+import agh.utils.ViewUpdater;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
+import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.plaf.IconUIResource;
 import org.apache.log4j.Logger;
 
 /**
@@ -20,10 +23,10 @@ import org.apache.log4j.Logger;
 public class MyGUI extends javax.swing.JFrame {
 
     private DownloaderPool downloaderPool = null;
-    private ArrayList<Struct> todayList = null;
-    private ArrayList<Struct> tommorowList = null;
-    private ArrayList<Struct> nextList = null;
-    private ArrayList<Downloader> downloaderPoolList = new ArrayList<>();
+    public static ArrayList<Struct> todayList = null;
+    public static ArrayList<Struct> tommorowList = null;
+    public static ArrayList<Struct> nextList = null;
+    public static ArrayList<Downloader> downloaderPoolList = new ArrayList<>();
     
     public MyObserver downloadObserver = null;
     public static MyObservable downloadObservable = null;
@@ -37,14 +40,17 @@ public class MyGUI extends javax.swing.JFrame {
         downloadObserver.observe(downloadObservable);
         
         
-        bPreview.setEnabled(false);
+        //bPreview.setEnabled(false);
         
          try {
                 for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows"/*"Nimbus"*/.equals(info.getName())) {
+                if (/*"Windows"*/"Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
+                
+                //UIManager.put("Tree.collapsedIcon", new IconUIResource(new NodeIcon('+')));
+               // UIManager.put("Tree.expandedIcon",  new IconUIResource(new NodeIcon('-')));
                 
             }
          }catch(ClassNotFoundException e){
@@ -83,6 +89,7 @@ public class MyGUI extends javax.swing.JFrame {
         pNextDay = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tNextDay = new javax.swing.JTree();
+        lDescription = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[JAVA] Artur Kozik");
@@ -120,7 +127,7 @@ public class MyGUI extends javax.swing.JFrame {
         );
         pTodayLayout.setVerticalGroup(
             pTodayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
         );
 
         tChannel.addTab("Today", pToday);
@@ -135,7 +142,7 @@ public class MyGUI extends javax.swing.JFrame {
         );
         pTommorowLayout.setVerticalGroup(
             pTommorowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
         );
 
         tChannel.addTab("Tommorow", pTommorow);
@@ -150,10 +157,13 @@ public class MyGUI extends javax.swing.JFrame {
         );
         pNextDayLayout.setVerticalGroup(
             pNextDayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
         );
 
         tChannel.addTab("Next day", pNextDay);
+
+        lDescription.setText("Click on TV programm to view description");
+        lDescription.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,21 +176,25 @@ public class MyGUI extends javax.swing.JFrame {
                     .addComponent(bPreview, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(tChannel))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tChannel)
+                    .addComponent(lDescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tChannel)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(bDownload, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(bPreview, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(bExit, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(tChannel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -208,6 +222,8 @@ public class MyGUI extends javax.swing.JFrame {
 
     private void bPreviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bPreviewActionPerformed
 
+        (new ViewUpdater(MyGUI.tToday)).addTvProgrammToTree(todayList);
+        System.out.println(Parser.convertTimestamp("1442318400"));
         
     }//GEN-LAST:event_bPreviewActionPerformed
 
@@ -224,12 +240,13 @@ public class MyGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JLabel lDescription;
     public javax.swing.JPanel pNextDay;
     private javax.swing.JPanel pToday;
     private javax.swing.JPanel pTommorow;
     private javax.swing.JTabbedPane tChannel;
-    private javax.swing.JTree tNextDay;
-    private javax.swing.JTree tToday;
-    private javax.swing.JTree tTommorow;
+    public static javax.swing.JTree tNextDay;
+    public static javax.swing.JTree tToday;
+    public static javax.swing.JTree tTommorow;
     // End of variables declaration//GEN-END:variables
 }

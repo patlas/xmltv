@@ -25,4 +25,8 @@ public class Struct{
             
         }
         
+        public String getChannel(){
+            return kanal;
+        }
+        
     }
