@@ -9,11 +9,11 @@ import agh.utils.MyObservable;
 import agh.utils.MyObserver;
 import agh.utils.Struct;
 import agh.utils.ViewUpdater;
+import java.awt.Dimension;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
-import javax.swing.UIManager;
+import javax.swing.JTree;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.plaf.IconUIResource;
 import org.apache.log4j.Logger;
 
 /**
@@ -40,7 +40,7 @@ public class MyGUI extends javax.swing.JFrame {
         downloadObserver.observe(downloadObservable);
         
         
-        //bPreview.setEnabled(false);
+        bPreview.setEnabled(false);
         
          try {
                 for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -93,6 +93,12 @@ public class MyGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[JAVA] Artur Kozik");
+        setMinimumSize(new java.awt.Dimension(835, 405));
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
 
         bDownload.setText("Download");
         bDownload.addActionListener(new java.awt.event.ActionListener() {
@@ -117,6 +123,14 @@ public class MyGUI extends javax.swing.JFrame {
             }
         });
 
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Najpierw pobierz listę kanałów a nastepnie naciśnij przycisk preview");
+        tToday.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        tToday.setName(""); // NOI18N
+        tToday.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tTodayMouseClicked(evt);
+            }
+        });
         jScrollPane3.setViewportView(tToday);
 
         javax.swing.GroupLayout pTodayLayout = new javax.swing.GroupLayout(pToday);
@@ -132,6 +146,13 @@ public class MyGUI extends javax.swing.JFrame {
 
         tChannel.addTab("Today", pToday);
 
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Najpierw pobierz listę kanałów a nastepnie naciśnij przycisk preview");
+        tTommorow.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        tTommorow.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tTommorowMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tTommorow);
 
         javax.swing.GroupLayout pTommorowLayout = new javax.swing.GroupLayout(pTommorow);
@@ -147,6 +168,13 @@ public class MyGUI extends javax.swing.JFrame {
 
         tChannel.addTab("Tommorow", pTommorow);
 
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Najpierw pobierz listę kanałów a nastepnie naciśnij przycisk preview");
+        tNextDay.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        tNextDay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tNextDayMouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(tNextDay);
 
         javax.swing.GroupLayout pNextDayLayout = new javax.swing.GroupLayout(pNextDay);
@@ -178,7 +206,7 @@ public class MyGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tChannel)
-                    .addComponent(lDescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(lDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,7 +251,8 @@ public class MyGUI extends javax.swing.JFrame {
     private void bPreviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bPreviewActionPerformed
 
         (new ViewUpdater(MyGUI.tToday)).addTvProgrammToTree(todayList);
-        System.out.println(Parser.convertTimestamp("1442318400"));
+        (new ViewUpdater(MyGUI.tTommorow)).addTvProgrammToTree(tommorowList);
+        (new ViewUpdater(MyGUI.tNextDay)).addTvProgrammToTree(nextList);
         
     }//GEN-LAST:event_bPreviewActionPerformed
 
@@ -232,6 +261,50 @@ public class MyGUI extends javax.swing.JFrame {
         System.exit(NORMAL);
     }//GEN-LAST:event_bExitActionPerformed
 
+    private void tTodayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tTodayMouseClicked
+        JTree tree = (JTree)evt.getComponent();
+        showDescription(tree);
+      
+    }//GEN-LAST:event_tTodayMouseClicked
+
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
+        Dimension size = getBounds().getSize();
+        System.out.println(size.height+ " "+ size.width);
+    }//GEN-LAST:event_formComponentResized
+
+    private void tTommorowMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tTommorowMouseClicked
+        JTree tree = (JTree)evt.getComponent();
+        showDescription(tree);
+    }//GEN-LAST:event_tTommorowMouseClicked
+
+    private void tNextDayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tNextDayMouseClicked
+        JTree tree = (JTree)evt.getComponent();
+        showDescription(tree);
+    }//GEN-LAST:event_tNextDayMouseClicked
+
+    
+    private void showDescription(JTree tree){
+        String path = null;
+        if(tree.getSelectionPath() != null){
+            path = tree.getSelectionPath().toString();
+        }
+        //System.out.println(path);
+
+        if((path.split("ID:").length)>1)
+        {
+            String id = path.split("ID:")[path.split("ID:").length-1];
+            if (id.length() > 0 && id.charAt(id.length()-1)==']') {
+                id = id.substring(0, id.length()-1);
+            }
+            //System.out.println(id);
+            String description = (new Parser()).getDescription(id);
+            //System.out.println(description);
+            
+            logger.info("Pobieranie opisu dla programu o ID="+id);
+            lDescription.setText("<html>"+description+"</html>");
+        }
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton bDownload;

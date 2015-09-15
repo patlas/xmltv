@@ -42,7 +42,7 @@ public class ViewUpdater {
             
             for(Vector<String> prog : ch.program)
             {
-                channel.add( new DefaultMutableTreeNode( "[godzina: "+Parser.convertTimestamp(prog.get(2))+ "] " + prog.get(1)));
+                channel.add( new DefaultMutableTreeNode( "[godzina: "+Parser.convertTimestamp(prog.get(2))+ "] " + prog.get(1)+ "     ID:"+prog.get(0)));
             }
             
             root.add(channel);

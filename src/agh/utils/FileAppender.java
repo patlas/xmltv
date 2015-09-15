@@ -16,8 +16,6 @@ long timestamp = Long.parseLong("1442095500") * 1000;
 */
 package agh.utils;
 
-import agh.Parser;
-import agh.exception.MyException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -25,7 +23,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.io.PrintWriter;
 import java.util.Vector;
-import javax.swing.tree.DefaultMutableTreeNode;
 import org.apache.log4j.Logger;
 
 /**
@@ -41,12 +38,13 @@ public class FileAppender {
     String channelFile = null;
     public PrintWriter writer = null;
     File file = null;
+    String dir = "xmltv_files/";
     
     
     public FileAppender(String dFile){
         Boolean newFile = false;
-        dataFile = dFile;
-        file = new File(dFile);
+        dataFile = dir+dFile;
+        file = new File(dir+dFile);
         
         try{
             writer = new PrintWriter( new FileOutputStream(file, false) );
